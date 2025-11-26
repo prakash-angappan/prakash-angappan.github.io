@@ -1,10 +1,134 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Prakash Angappan - Game Developer</title>
-  </head>
-  <body>
-    <h1>Hello, I'm Prakash</h1>
-    <p>Head of Engineering – Game Development</p>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prakash Angappan — Head of Engineering | Game Dev</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Prakash Angappan</h1>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#showreel">Showreel</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Head of Engineering — Game Development</h2>
+          <p>I build gameplay systems, lead multidisciplinary teams (10+), and ship commercial PC & mobile titles. Skilled in Unity, Unreal, multiplayer, LiveOps, and performance engineering.</p>
+          <a class="cta" href="#projects">View Projects</a>
+        </div>
+        <div class="hero-media">
+          <!-- showreel thumbnail or animated gif -->
+          <img src="assets/hero-thumb.jpg" alt="Gameplay montage thumbnail" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <h3>About</h3>
+      <p>Experienced engineering leader with a track record of shipping high-quality games. I design and implement core gameplay systems, improve performance and pipelines, and mentor engineering teams to deliver on schedule.</p>
+      <ul class="skills">
+        <li>Unity / C#</li>
+        <li>Unreal Engine</li>
+        <li>Multiplayer (Photon / Mirror / PlayFab)</li>
+        <li>LiveOps & Analytics</li>
+        <li>Team Leadership & Mentorship</li>
+      </ul>
+    </section>
+
+    <!-- Projects Grid -->
+    <section id="projects" class="section container">
+      <h3>Selected Projects</h3>
+      <div class="projects-grid">
+        <!-- Project card 1 -->
+        <article class="project-card" data-video="https://www.youtube.com/embed/VIDEO_ID_1" data-title="Hybrid Blackjack–Bingo">
+          <img src="assets/project1-thumb.jpg" alt="Hybrid Blackjack Bingo thumbnail" />
+          <div class="card-body">
+            <h4>Hybrid Blackjack–Bingo</h4>
+            <p>Led dev of a hybrid Blackjack–Bingo game, merging card mechanics and Bingo progression for novel gameplay.</p>
+            <div class="meta">Role: Lead Engineer • Team: 10 • Tech: Unity, C#</div>
+            <button class="btn open-project">Watch Trailer</button>
+          </div>
+        </article>
+
+        <!-- Project card 2 -->
+        <article class="project-card" data-video="https://www.youtube.com/embed/VIDEO_ID_2" data-title="Multiplayer Racing Prototype">
+          <img src="assets/project2-thumb.jpg" alt="Multiplayer Racing thumbnail" />
+          <div class="card-body">
+            <h4>Multiplayer Racing Prototype</h4>
+            <p>Built netcode, matchmaking, and deterministic rollback for low-latency multiplayer races.</p>
+            <div class="meta">Role: Engineering Lead • Team: 6 • Tech: Unreal, Custom Netcode</div>
+            <button class="btn open-project">Watch Gameplay</button>
+          </div>
+        </article>
+
+        <!-- Add more project-card articles the same way -->
+      </div>
+    </section>
+
+    <!-- Showreel -->
+    <section id="showreel" class="section container">
+      <h3>Showreel</h3>
+      <div class="video-row">
+        <!-- embed YouTube/Vimeo by iframe; replace LINK with embed link -->
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/YOUR_SHOWREEL_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section container">
+      <h3>Experience</h3>
+      <div class="experience-list">
+        <div class="exp-item">
+          <h4>Head of Engineering — Your Current Company</h4>
+          <p>Led engineering across 3 PC and mobile titles. Focus on architecture, hiring, performance and shipping features.</p>
+          <ul>
+            <li>Managed a team of 10+ devs, artists, designers</li>
+            <li>Introduced CI pipelines, automated testing, and performance budgets</li>
+          </ul>
+        </div>
+        <!-- Add previous roles similarly -->
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:prakash@example.com">prakash@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/prakashangappan/" target="_blank">linkedin.com/in/prakashangappan</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Prakash Angappan — Head of Engineering</small>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="modal-close" class="modal-close">×</button>
+      <h3 id="modal-title"></h3>
+      <div id="modal-video" class="modal-video"></div>
+      <div id="modal-desc"></div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
 </html>
