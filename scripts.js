@@ -1,32 +1,19 @@
-// small JS to open project modal & play embedded YouTube/Vimeo
-document.getElementById('year').textContent = new Date().getFullYear();
+// small script: set year and smooth scroll for anchor links
+document.addEventListener('DOMContentLoaded', function(){
+  var y = document.getElementById('year');
+  if(y) y.textContent = new Date().getFullYear();
 
-// open project modal
-document.querySelectorAll('.project-card .open-project').forEach(btn=>{
-  btn.addEventListener('click', e=>{
-    const card = e.target.closest('.project-card');
-    const video = card.getAttribute('data-video');
-    const title = card.getAttribute('data-title');
-    openModal(title, video, card.querySelector('p').innerText);
+  // smooth scroll for internal links
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+    anchor.addEventListener('click', function(e){
+      var targetId = anchor.getAttribute('href').substring(1);
+      var target = document.getElementById(targetId);
+      if(target){
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+        // update hash without jumping
+        history.pushState(null, '', '#' + targetId);
+      }
+    });
   });
 });
-
-const modal = document.getElementById('project-modal');
-const modalTitle = document.getElementById('modal-title');
-const modalVideo = document.getElementById('modal-video');
-const modalDesc = document.getElementById('modal-desc');
-document.getElementById('modal-close').addEventListener('click', closeModal);
-modal.addEventListener('click', (e)=>{ if(e.target===modal) closeModal(); });
-
-function openModal(title, embedUrl, desc){
-  modalTitle.textContent = title;
-  // create iframe
-  modalVideo.innerHTML = `<iframe src="${embedUrl}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-  modalDesc.textContent = desc;
-  modal.setAttribute('aria-hidden','false');
-}
-
-function closeModal(){
-  modal.setAttribute('aria-hidden','true');
-  modalVideo.innerHTML = '';
-}
