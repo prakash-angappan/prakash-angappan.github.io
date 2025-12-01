@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Prakash Angappan — Head of Engineering | Game Development</title>
-  <meta name="description" content="Prakash Angappan — Solution-oriented game developer with 16+ years in game development. Lead / Head of Engineering — gameplay systems, multiplayer, LiveOps, team leadership.">
+  <meta name="description" content="Prakash Angappan — Solution-oriented game developer with 16+ years in game development.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -31,8 +31,8 @@
 
   <main class="wrap main">
 
-    <!-- ABOUT -->
-    <section id="about" class="card">
+    <!-- ABOUT (kept open by default) -->
+    <section id="about" class="card" data-bg="design/abstract-hero.jpg">
       <h2>Summary</h2>
       <p>Solution-oriented game developer with 16+ years of experience in game development across PC, console and mobile platforms. Experienced in technical design, team leadership, and shipping titles from prototypes to release. Areas of focus include gameplay systems, AI, multiplayer/netcode research, LiveOps/back-end integration and performance engineering.</p>
 
@@ -46,192 +46,161 @@
       </ul>
     </section>
 
-    <!-- COMPANIES (single page sections) -->
+    <!-- COMPANIES (accordion) -->
     <section id="companies" class="card">
       <h2>Companies & Roles</h2>
 
-      <article id="voidpeak" class="company">
-        <h3>VoidPeak Games — Lead Programmer</h3>
-        <p class="time">Dec 2020 – Present</p>
+      <details class="accordion open" data-bg="design/abstract-dark-1.jpg">
+        <summary><span class="summary-title">VoidPeak Games — Lead Programmer</span>
+                <span class="summary-meta">Dec 2020 – Present</span></summary>
+        <div class="accordion-body">
+          <h4>Overview</h4>
+          <p>Lead Programmer responsible for technical leadership across titles including a vertical slice Action RPG and a strategy/roguelite project. Focus: core gameplay systems, VFX, AI, R&amp;D and mentoring small teams.</p>
+          <h4>Projects & Contributions</h4>
+          <ul>
+            <li><strong>Radiant Dark — Vertical Slice</strong> — Action RPG (PC) • Unreal Engine 5.3.
+              <br><em>Tasks:</em> Led a team of 4 developers; technical design; VFX implementation using animation notifies.
+              <br><em>R&amp;D:</em> FCS plugin; LyraStarterGame patterns; Gameplay Ability System (GAS) prototyping.</li>
 
-        <h4>Overview</h4>
-        <p>Lead Programmer responsible for technical leadership across titles including a vertical slice Action RPG and a strategy/roguelite project. Focus: core gameplay systems, VFX, AI, R&amp;D and mentoring small teams.</p>
+            <li><strong>The Last Bastion</strong> — Strategy / Roguelite (PC) • Unity.
+              <br><em>Tasks:</em> Led a team of 2 developers; technical design; enemy AI using Behavior Trees; implemented balancing hooks and systems.
+              <br><em>Awards:</em> Gem Award Winner (Best HardCore Game — 2022); IGDC nomination (Indie Game Of The Year — 2022).</li>
+          </ul>
+        </div>
+      </details>
 
-        <h4>Projects & Contributions</h4>
-        <ul>
-          <li><strong>Radiant Dark — Vertical Slice</strong> — Action RPG (PC) • Unreal Engine 5.3.
-            <br><em>Tasks:</em> Led a team of 4 developers; technical design; VFX implementation using animation notifies.
-            <br><em>R&amp;D:</em> FCS (Flexible Combat System) plugin; LyraStarterGame patterns; Gameplay Ability System (GAS) prototyping.</li>
+      <details class="accordion" data-bg="design/abstract-dark-2.jpg">
+        <summary><span class="summary-title">Tentworks Interactive — Lead Game Developer</span>
+                <span class="summary-meta">Jan 2019 – Nov 2020</span></summary>
+        <div class="accordion-body">
+          <h4>Overview</h4>
+          <p>Lead Game Developer for a tycoon-style city simulation (City Block Builder). Focus on AI, simulation systems, performance tuning and team coordination.</p>
+          <h4>Tasks & Responsibilities</h4>
+          <ul>
+            <li>Led a team of 4 developers; planned sprints and coordinated features.</li>
+            <li>Designed AI for crowd & worker behaviour using Playmaker + Behavior Trees.</li>
+            <li>Performance tuning and pipeline improvements.</li>
+          </ul>
+        </div>
+      </details>
 
-          <li><strong>The Last Bastion</strong> — Strategy / Roguelite (PC) • Unity.
-            <br><em>Tasks:</em> Led a team of 2 developers; technical design; enemy AI using Behavior Trees; implemented balancing hooks and game systems.
-            <br><em>Awards:</em> Gem Award Winner — Best HardCore Game (AnimXpress, 2022); Nominated — Indie Game Of The Year (IGDC, 2022).</li>
-        </ul>
+      <details class="accordion" data-bg="design/abstract-dark-3.jpg">
+        <summary><span class="summary-title">Aavega Interactive — Lead Game Developer</span>
+                <span class="summary-meta">Oct 2014 – Jan 2018</span></summary>
+        <div class="accordion-body">
+          <h4>Overview</h4>
+          <p>Lead Game Developer for PC & mobile titles — Jolly Rogers, Jallikattu Run 2, Captain Kosmo, Spell Easy.</p>
+          <h4>Projects & Highlights</h4>
+          <ul>
+            <li><strong>Jolly Rogers — Pirates Rumble</strong> — 4-player couch co-op (PC) — technical design, collectibles, multiplayer modes.</li>
+            <li><strong>Jallikattu Run 2</strong> — Endless runner (Android) — shop & progression systems.</li>
+            <li><strong>Captain Kosmo</strong> — Endless runner (mobile) — boss AI, collectibles & UI.</li>
+            <li><strong>Spell Easy</strong> — Word puzzle for kids — UI & sound integration.</li>
+          </ul>
+        </div>
+      </details>
 
-        <h4>Responsibilities</h4>
-        <ul>
-          <li>Technical leadership and architecture for gameplay systems.</li>
-          <li>Mentoring engineers and guiding small cross-discipline teams.</li>
-          <li>Performance profiling and optimization for PC targets.</li>
-          <li>Prototyping advanced systems and integrating industry patterns (GAS, FCS).</li>
-        </ul>
-      </article>
+      <details class="accordion" data-bg="design/abstract-dark-4.jpg">
+        <summary><span class="summary-title">Dhruva Interactive — Game Programmer</span>
+                <span class="summary-meta">Apr 2013 – Aug 2014</span></summary>
+        <div class="accordion-body">
+          <h4>Overview</h4>
+          <ul>
+            <li><strong>Captain Sharky</strong> — Mini-games bundle (mobile) — platform mini-games & shared profile system.</li>
+            <li>Unreleased puzzle title — collectibles & UI.</li>
+            <li>Unreleased resource-management prototype — prototype systems.</li>
+          </ul>
+          <h4>Responsibilities</h4>
+          <ul>
+            <li>Gameplay mechanics, shared systems and mobile optimisation.</li>
+          </ul>
+        </div>
+      </details>
 
-      <article id="tentworks" class="company">
-        <h3>Tentworks Interactive — Lead Game Developer</h3>
-        <p class="time">Jan 2019 – Nov 2020</p>
-
-        <h4>Overview</h4>
-        <p>Lead Game Developer for a tycoon-style city simulation. Responsibilities covered AI, simulation systems, performance tuning and team coordination.</p>
-
-        <h4>Project</h4>
-        <p><strong>City Block Builder</strong> — Tycoon / City Simulation (PC) • Unity.</p>
-
-        <h4>Tasks & Responsibilities</h4>
-        <ul>
-          <li>Led a team of 4 developers; planned sprints; coordinated features.</li>
-          <li>Designed and implemented AI for crowd and worker behaviours using Playmaker and Behavior Tree patterns.</li>
-          <li>Built core systems for building simulation, resource management and UI integration.</li>
-          <li>Performance tuning for simulation workloads and pipeline improvements.</li>
-        </ul>
-      </article>
-
-      <article id="aavega" class="company">
-        <h3>Aavega Interactive — Lead Game Developer</h3>
-        <p class="time">Oct 2014 – Jan 2018</p>
-
-        <h4>Overview</h4>
-        <p>Lead Game Developer working on both PC and mobile titles. Focus areas included local multiplayer design, endless runners, mini-game bundles and UI/UX.</p>
-
-        <h4>Projects & Highlights</h4>
-        <ul>
-          <li><strong>Jolly Rogers — Pirates Rumble</strong> — 4-player couch co-op (PC) • Unity.
-            <br><em>Tasks:</em> Technical design, collectibles, map obstacles, game modes (Capture the Flag, Team Deathmatch).</li>
-          <li><strong>Jallikattu Run 2</strong> — Endless runner (Android) • Unity. <em>Tasks:</em> Shop implementation and progression systems.</li>
-          <li><strong>Captain Kosmo</strong> — Endless runner (Android & iOS) • Unity. <em>Tasks:</em> Boss AI, collectibles, obstacles and UI integration.</li>
-          <li><strong>Spell Easy</strong> — Word puzzle for kids (Android & iOS) • Unity. <em>Tasks:</em> UI and sound integration.</li>
-        </ul>
-
-        <h4>Responsibilities</h4>
-        <ul>
-          <li>Feature design and implementation for gameplay and multiplayer modes.</li>
-          <li>UI & shop integration for mobile titles, mentoring and working with art/design teams.</li>
-          <li>Mobile performance optimization and QA iteration support.</li>
-        </ul>
-      </article>
-
-      <article id="dhruva" class="company">
-        <h3>Dhruva Interactive — Game Programmer</h3>
-        <p class="time">Apr 2013 – Aug 2014</p>
-
-        <h4>Overview</h4>
-        <p>Game Programmer on mobile titles and prototypes, focusing on gameplay features, UI and reusable systems.</p>
-
-        <h4>Projects & Contributions</h4>
-        <ul>
-          <li><strong>Captain Sharky</strong> — Mini-games bundle (Android & iOS) • Unity.
-            <br><em>Tasks:</em> Platform mini-games, shared profile system, UI and collectibles.</li>
-          <li>Unreleased puzzle title — mobile — contributed to collectibles & UI.</li>
-          <li>Unreleased resource-management prototype — PC — prototype implementation and systems.</li>
-        </ul>
-
-        <h4>Responsibilities</h4>
-        <ul>
-          <li>Implemented game mechanics, shared profile systems and UI flows.</li>
-          <li>Worked on mobile optimization, build pipelines and QA support.</li>
-        </ul>
-      </article>
-
-      <article id="gameshastra" class="company">
-        <h3>Gameshastra Solutions — Group Lead</h3>
-        <p class="time">Apr 2007 – Sept 2012</p>
-
-        <h4>Overview</h4>
-        <p>Group Lead for console and PC projects. Focused on gameplay systems, collectibles, and platform-specific optimizations for PS2, PSP, PS3 Move and PC.</p>
-
-        <h4>Projects & Highlights</h4>
-        <ul>
-          <li><strong>Kite Fight</strong> — Kite flying/fighting (PS3 Move). <em>Tasks:</em> Balloons popping mechanics, UI and motion-input handling.</li>
-          <li><strong>Cart Kings</strong> — Bullock cart racing (PS2 & PSP). <em>Tasks:</em> Powerups and platform optimization.</li>
-          <li><strong>Desi Adda</strong> — Mini-game bundle (PS2). <em>Tasks:</em> Rhythm/dance mini-game and integration into main package.</li>
-          <li><strong>EtchASketch</strong> — Action/Adventure (PC). <em>Tasks:</em> Collectibles and level scripting.</li>
-        </ul>
-
-        <h4>Responsibilities</h4>
-        <ul>
-          <li>Led teams and coordinated cross-discipline efforts for console titles.</li>
-          <li>Designed platform-appropriate gameplay systems and optimization work.</li>
-        </ul>
-      </article>
+      <details class="accordion" data-bg="design/abstract-dark-5.jpg">
+        <summary><span class="summary-title">Gameshastra Solutions — Group Lead</span>
+                <span class="summary-meta">Apr 2007 – Sept 2012</span></summary>
+        <div class="accordion-body">
+          <h4>Overview & Projects</h4>
+          <ul>
+            <li><strong>Kite Fight</strong> — PS3 Move — balloons popping mechanics & motion input.</li>
+            <li><strong>Cart Kings</strong> — PS2 & PSP — powerups & optimization.</li>
+            <li><strong>Desi Adda</strong> — PS2 — mini-game integration & rhythm game.</li>
+            <li><strong>EtchASketch</strong> — PC — collectibles & scripting.</li>
+          </ul>
+        </div>
+      </details>
 
     </section>
 
-    <!-- SELECTED PROJECTS (summary) -->
-    <section id="projects" class="card">
-      <h2>Selected Projects (summary)</h2>
-      <ol>
-        <li><strong>Radiant Dark</strong> — Vertical slice, Action RPG, PC, Unreal Engine 5.3. Lead Programmer; R&amp;D on FCS & GAS.</li>
-        <li><strong>The Last Bastion</strong> — Strategy / Roguelite, PC, Unity. Lead Programmer; Behavior Tree AI; award-winning title.</li>
-        <li><strong>City Block Builder</strong> — Tycoon / City Simulation, Unity. Lead Game Developer; AI & simulation systems.</li>
-        <li><strong>Jolly Rogers — Pirates Rumble</strong> — 4-player couch co-op (PC). Lead Game Developer; multiplayer modes & systems.</li>
-        <li><strong>Captain Sharky</strong> — Mobile mini-games bundle (Unity). Platform mini-games & shared profile system.</li>
-        <li>Multiple other console and mobile titles across Gameshastra, Aavega, Dhruva — roles included UI, collectibles, level design and performance work.</li>
-      </ol>
-    </section>
+    <!-- SELECTED PROJECTS (summary as collapsed accordion) -->
+    <details id="projects" class="card accordion" data-bg="design/abstract-dark-6.jpg">
+      <summary><h2>Selected Projects (summary)</h2></summary>
+      <div class="accordion-body">
+        <ol>
+          <li><strong>Radiant Dark</strong> — Vertical slice, Action RPG, PC, Unreal Engine 5.3. Lead Programmer; R&amp;D on FCS & GAS.</li>
+          <li><strong>The Last Bastion</strong> — Strategy / Roguelite, PC, Unity. Lead Programmer; Behavior Tree AI; award-winning title.</li>
+          <li><strong>City Block Builder</strong> — Tycoon / City Simulation, Unity. Lead Game Developer; AI & simulation systems.</li>
+          <li><strong>Jolly Rogers — Pirates Rumble</strong> — Couch co-op, PC, Unity. Multiplayer modes & systems.</li>
+          <li><strong>Captain Sharky</strong> — Mobile mini-games bundle (Unity). Platform mini-games & shared profile system.</li>
+          <li>Additional console and mobile titles across Gameshastra, Aavega, Dhruva — UI, collectibles, level design and performance work.</li>
+        </ol>
+      </div>
+    </details>
 
-    <!-- TECH & TOOLS -->
-    <section id="tech" class="card">
-      <h2>Programming Languages, Engines & Tools</h2>
-      <p><strong>Languages:</strong> C, C++, C#</p>
-      <p><strong>Engines & Frameworks:</strong> Unreal Engine 5.3, Unity, Phyre, Vicious Cycle Engine, BlitzMax, Torque Game Engine</p>
-
-      <h3>Dev Tools</h3>
-      <p>Visual Studio 2022, Rider, Xcode, ProDgDebugger</p>
-
-      <h3>Version Control</h3>
-      <p>Git, Tortoise SVN, Smart SVN, Perforce, SourceTree, Git Desktop</p>
-
-      <h3>Project Management</h3>
-      <p>Jira, Trello, BaseCamp, Excel</p>
-    </section>
+    <!-- TECH (accordion) -->
+    <details id="tech" class="card accordion" data-bg="design/abstract-dark-7.jpg">
+      <summary><h2>Programming Languages, Engines & Tools</h2></summary>
+      <div class="accordion-body">
+        <p><strong>Languages:</strong> C, C++, C#</p>
+        <p><strong>Engines & Frameworks:</strong> Unreal Engine 5.3, Unity, Phyre, Vicious Cycle Engine, BlitzMax, Torque</p>
+        <p><strong>Dev Tools:</strong> Visual Studio 2022, Rider, Xcode, ProDgDebugger</p>
+        <p><strong>Version Control:</strong> Git, Tortoise SVN, Perforce, SourceTree</p>
+        <p><strong>Project Mgmt:</strong> Jira, Trello, BaseCamp, Excel</p>
+      </div>
+    </details>
 
     <!-- EDUCATION -->
-    <section id="education" class="card">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Master of Computer Applications</strong> — SSM College of Engineering (Affiliated to Anna University); 2006 — Score: 78%.</li>
-        <li><strong>Bachelor of Computer Science</strong> — Sri Vasavi College (Affiliated to Bharathiar University); 2003.</li>
-        <li><strong>Higher Secondary (12th)</strong> — Government Higher Secondary School, Tamilnadu State Board; 2000 — Score: 76%.</li>
-        <li><strong>Secondary (10th)</strong> — Government Higher Secondary School, Tamilnadu State Board; 1998 — Score: 68%.</li>
-      </ul>
-    </section>
+    <details id="education" class="card accordion">
+      <summary><h2>Education</h2></summary>
+      <div class="accordion-body">
+        <ul>
+          <li><strong>MCA</strong> — SSM College of Engineering (Anna University). 2006 — 78%.</li>
+          <li><strong>BSc</strong> — Sri Vasavi College (Bharathiar University). 2003.</li>
+          <li><strong>12th</strong> — Government Higher Secondary School. 2000 — 76%.</li>
+          <li><strong>10th</strong> — Government Higher Secondary School. 1998 — 68%.</li>
+        </ul>
+      </div>
+    </details>
 
-    <!-- SKILLS & SOFT SKILLS -->
-    <section id="skills" class="card">
-      <h2>Skills & Strengths</h2>
-      <ul>
-        <li>Team Leadership & Development</li>
-        <li>Project Management (Scrum & Agile)</li>
-        <li>Strategic Planning & Execution</li>
-        <li>Version Control Administration</li>
-        <li>Problem Solving & Communication</li>
-        <li>Collaborative Mindset, Meticulous, Open-minded</li>
-      </ul>
-    </section>
+    <!-- SKILLS -->
+    <details id="skills" class="card accordion">
+      <summary><h2>Skills & Strengths</h2></summary>
+      <div class="accordion-body">
+        <ul>
+          <li>Team Leadership & Development</li>
+          <li>Project Management (Scrum & Agile)</li>
+          <li>Strategic Planning & Execution</li>
+          <li>Version Control Administration</li>
+          <li>Problem Solving & Communication</li>
+        </ul>
+      </div>
+    </details>
 
     <!-- HOBBIES -->
-    <section id="hobbies" class="card">
-      <h2>Hobbies</h2>
-      <p>Playing video games, bike riding, hiking.</p>
-    </section>
+    <details id="hobbies" class="card accordion">
+      <summary><h2>Hobbies</h2></summary>
+      <div class="accordion-body">
+        <p>Playing video games, bike riding, hiking.</p>
+      </div>
+    </details>
 
-    <!-- SOURCE & DOWNLOAD -->
+    <!-- SOURCE & CONTACT -->
     <section id="source" class="card small">
-      <p>Site content populated from uploaded resume. Source: :contentReference[oaicite:1]{index=1}</p>
+      <p>Site content populated from uploaded resume. Source: :contentReference[oaicite:0]{index=0}</p>
       <p><a href="assets/PrakashAngappan-Resume.pdf" download>Download Resume (PDF)</a></p>
     </section>
 
-    <!-- CONTACT (repeat for emphasis) -->
     <section id="contact" class="card">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:aprakash.mca@gmail.com">aprakash.mca@gmail.com</a></p>
