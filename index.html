@@ -4,208 +4,248 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Prakash Angappan — Head of Engineering | Game Development</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Prakash Angappan — Solution-oriented game developer with 16+ years in game development. Lead / Head of Engineering — gameplay systems, multiplayer, LiveOps, team leadership.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand">Prakash Angappan</h1>
-      <nav class="nav">
-        <a href="#projects">Projects</a>
-        <a href="#showreel">Showreel</a>
-        <a href="#experience">Experience</a>
+  <header class="header">
+    <div class="wrap">
+      <h1 class="name">Prakash Angappan</h1>
+      <p class="role">Head / Lead of Engineering — Game Development</p>
+      <p class="contact">
+        Hyderabad, India &nbsp;•&nbsp;
+        <a href="tel:+919900370190">+91-9900370190</a> &nbsp;•&nbsp;
+        <a href="mailto:aprakash.mca@gmail.com">aprakash.mca@gmail.com</a>
+      </p>
+
+      <nav class="top-nav" aria-label="Section links">
+        <a href="#about">About</a>
+        <a href="#companies">Companies</a>
+        <a href="#projects">Selected Projects</a>
+        <a href="#tech">Tech & Tools</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h2>Head of Engineering — Game Development</h2>
-          <p>Solution-oriented game developer with 16+ years of experience building games across PC and mobile. I lead engineering teams, design gameplay systems, and ship quality titles using Unity and Unreal. Based in Hyderabad.</p>
-          <a class="cta" href="#projects">View Projects</a>
-        </div>
-        <div class="hero-media">
-          <img src="assets/hero-thumb.jpg" alt="Gameplay montage thumbnail" />
-        </div>
-      </div>
-    </section>
+  <main class="wrap main">
 
-    <!-- About -->
-    <section id="about" class="section container">
-      <h3>About</h3>
-      <p>I'm <strong>Prakash Angappan</strong> — Lead / Head of Engineering with extensive experience in technical design, team leadership, and shipping games on PC and mobile. I focus on gameplay systems, AI, networking, LiveOps integrations, and improving pipelines and performance.</p>
+    <!-- ABOUT -->
+    <section id="about" class="card">
+      <h2>Summary</h2>
+      <p>Solution-oriented game developer with 16+ years of experience in game development across PC, console and mobile platforms. Experienced in technical design, team leadership, and shipping titles from prototypes to release. Areas of focus include gameplay systems, AI, multiplayer/netcode research, LiveOps/back-end integration and performance engineering.</p>
 
-      <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:12px;">
-        <div style="flex:1;min-width:240px">
-          <h4>Contact</h4>
-          <p>Hyderabad, India<br>
-            Phone: <a href="tel:+919900370190">+91-9900370190</a><br>
-            Email: <a href="mailto:aprakash.mca@gmail.com">aprakash.mca@gmail.com</a>
-          </p>
-        </div>
-
-        <div style="flex:2;min-width:260px">
-          <h4>Core Strengths</h4>
-          <ul class="skills" style="margin-top:8px">
-            <li>Team leadership & mentoring (teams of 4–10+)</li>
-            <li>Gameplay systems, AI, VFX integration</li>
-            <li>Multiplayer & netcode concepts (design + R&D)</li>
-            <li>LiveOps, analytics & backend integration (PlayFab)</li>
-            <li>Performance engineering & tooling</li>
-          </ul>
-        </div>
-      </div>
-
-      <h4 style="margin-top:18px">Tech & Tools</h4>
-      <ul class="skills">
-        <li>Unity, Unreal Engine (UE 5.3)</li>
-        <li>C, C++, C#</li>
-        <li>Perforce, Git, Tortoise SVN</li>
-        <li>Jenkins / CI, Jira, Trello</li>
-        <li>Rider, Visual Studio, Xcode</li>
+      <h3>Core strengths</h3>
+      <ul>
+        <li>Team leadership & mentoring (small-to-medium teams, 2–10+)</li>
+        <li>Gameplay systems, AI & VFX integration</li>
+        <li>Multiplayer architecture and netcode R&amp;D</li>
+        <li>LiveOps, analytics & backend integration (PlayFab)</li>
+        <li>Performance engineering, build pipelines and CI</li>
       </ul>
     </section>
 
-    <!-- Projects Grid -->
-    <section id="projects" class="section container">
-      <h3>Selected Projects</h3>
-      <div class="projects-grid">
+    <!-- COMPANIES (single page sections) -->
+    <section id="companies" class="card">
+      <h2>Companies & Roles</h2>
 
-        <!-- Project: Radiant Dark -->
-        <article class="project-card"
-                 data-video="https://www.youtube.com/embed/VIDEO_ID_RADIANT"
-                 data-title="Radiant Dark — Vertical Slice">
-          <img src="assets/radiant-dark-thumb.jpg" alt="Radiant Dark thumbnail" />
-          <div class="card-body">
-            <h4>Radiant Dark — Vertical Slice</h4>
-            <p>Action RPG vertical slice (PC) built in Unreal Engine 5.3. Led a team of 4 developers and handled technical design, VFX implementation and R&D (FCS plugin, Gameplay Ability System).</p>
-            <div class="meta">Role: Lead Programmer • Company: VoidPeak Games • Tech: Unreal 5.3</div>
-            <button class="btn open-project">Watch Trailer</button>
-          </div>
-        </article>
+      <article id="voidpeak" class="company">
+        <h3>VoidPeak Games — Lead Programmer</h3>
+        <p class="time">Dec 2020 – Present</p>
 
-        <!-- Project: The Last Bastion -->
-        <article class="project-card"
-                 data-video="https://www.youtube.com/embed/VIDEO_ID_LASTBASTION"
-                 data-title="The Last Bastion — Strategy / Roguelite">
-          <img src="assets/last-bastion-thumb.jpg" alt="The Last Bastion thumbnail" />
-          <div class="card-body">
-            <h4>The Last Bastion</h4>
-            <p>Strategy / Roguelite (PC) in Unity. Led a team of 2 developers, designed technical systems and enemy AI using Behavior Trees. This title won a Gem Award and was nominated for Indie Game of the Year (IGDC).</p>
-            <div class="meta">Role: Lead Programmer • Company: VoidPeak Games • Tech: Unity</div>
-            <button class="btn open-project">Watch Gameplay</button>
-          </div>
-        </article>
+        <h4>Overview</h4>
+        <p>Lead Programmer responsible for technical leadership across titles including a vertical slice Action RPG and a strategy/roguelite project. Focus: core gameplay systems, VFX, AI, R&amp;D and mentoring small teams.</p>
 
-        <!-- Project: Jolly Rogers Pirates Rumble -->
-        <article class="project-card"
-                 data-video="https://www.youtube.com/embed/VIDEO_ID_JOLLY"
-                 data-title="Jolly Rogers Pirates Rumble">
-          <img src="assets/jolly-rogers-thumb.jpg" alt="Jolly Rogers thumbnail" />
-          <div class="card-body">
-            <h4>Jolly Rogers — Pirates Rumble</h4>
-            <p>4-player couch co-op (PC) on Unity. Responsible for technical design, collectibles, map obstacles and designing multiplayer game modes (Capture the Flag, Team Deathmatch).</p>
-            <div class="meta">Role: Lead Game Developer • Company: Aavega Interactive • Tech: Unity</div>
-            <button class="btn open-project">Watch Trailer</button>
-          </div>
-        </article>
+        <h4>Projects & Contributions</h4>
+        <ul>
+          <li><strong>Radiant Dark — Vertical Slice</strong> — Action RPG (PC) • Unreal Engine 5.3.
+            <br><em>Tasks:</em> Led a team of 4 developers; technical design; VFX implementation using animation notifies.
+            <br><em>R&amp;D:</em> FCS (Flexible Combat System) plugin; LyraStarterGame patterns; Gameplay Ability System (GAS) prototyping.</li>
 
-        <!-- Project: City Block Builder -->
-        <article class="project-card"
-                 data-video="https://www.youtube.com/embed/VIDEO_ID_CITYBLOCK"
-                 data-title="City Block Builder — Tycoon">
-          <img src="assets/city-block-thumb.jpg" alt="City Block Builder thumbnail" />
-          <div class="card-body">
-            <h4>City Block Builder</h4>
-            <p>Tycoon-style city builder (PC) in Unity. Led a team of 4 developers, worked on AI for crowd and workers, and created technical systems for building simulation.</p>
-            <div class="meta">Role: Lead Game Developer • Company: Tentworks Interactive • Tech: Unity</div>
-            <button class="btn open-project">Watch Gameplay</button>
-          </div>
-        </article>
+          <li><strong>The Last Bastion</strong> — Strategy / Roguelite (PC) • Unity.
+            <br><em>Tasks:</em> Led a team of 2 developers; technical design; enemy AI using Behavior Trees; implemented balancing hooks and game systems.
+            <br><em>Awards:</em> Gem Award Winner — Best HardCore Game (AnimXpress, 2022); Nominated — Indie Game Of The Year (IGDC, 2022).</li>
+        </ul>
 
-        <!-- Add additional projects from resume (Captain Sharky, AtlasMission, etc.) -->
-        <article class="project-card"
-                 data-video="https://www.youtube.com/embed/VIDEO_ID_CAPTAINSHARKY"
-                 data-title="Captain Sharky — Mini games">
-          <img src="assets/captain-sharky-thumb.jpg" alt="Captain Sharky thumbnail" />
-          <div class="card-body">
-            <h4>Captain Sharky — Mini games bundle</h4>
-            <p>Bundle of mini games for Android/iOS in Unity. Worked on platform-style mini-games and shared profile system across titles.</p>
-            <div class="meta">Role: Game Programmer • Company: Dhruva Interactive • Tech: Unity</div>
-            <button class="btn open-project">Watch Gameplay</button>
-          </div>
-        </article>
+        <h4>Responsibilities</h4>
+        <ul>
+          <li>Technical leadership and architecture for gameplay systems.</li>
+          <li>Mentoring engineers and guiding small cross-discipline teams.</li>
+          <li>Performance profiling and optimization for PC targets.</li>
+          <li>Prototyping advanced systems and integrating industry patterns (GAS, FCS).</li>
+        </ul>
+      </article>
 
-      </div>
+      <article id="tentworks" class="company">
+        <h3>Tentworks Interactive — Lead Game Developer</h3>
+        <p class="time">Jan 2019 – Nov 2020</p>
+
+        <h4>Overview</h4>
+        <p>Lead Game Developer for a tycoon-style city simulation. Responsibilities covered AI, simulation systems, performance tuning and team coordination.</p>
+
+        <h4>Project</h4>
+        <p><strong>City Block Builder</strong> — Tycoon / City Simulation (PC) • Unity.</p>
+
+        <h4>Tasks & Responsibilities</h4>
+        <ul>
+          <li>Led a team of 4 developers; planned sprints; coordinated features.</li>
+          <li>Designed and implemented AI for crowd and worker behaviours using Playmaker and Behavior Tree patterns.</li>
+          <li>Built core systems for building simulation, resource management and UI integration.</li>
+          <li>Performance tuning for simulation workloads and pipeline improvements.</li>
+        </ul>
+      </article>
+
+      <article id="aavega" class="company">
+        <h3>Aavega Interactive — Lead Game Developer</h3>
+        <p class="time">Oct 2014 – Jan 2018</p>
+
+        <h4>Overview</h4>
+        <p>Lead Game Developer working on both PC and mobile titles. Focus areas included local multiplayer design, endless runners, mini-game bundles and UI/UX.</p>
+
+        <h4>Projects & Highlights</h4>
+        <ul>
+          <li><strong>Jolly Rogers — Pirates Rumble</strong> — 4-player couch co-op (PC) • Unity.
+            <br><em>Tasks:</em> Technical design, collectibles, map obstacles, game modes (Capture the Flag, Team Deathmatch).</li>
+          <li><strong>Jallikattu Run 2</strong> — Endless runner (Android) • Unity. <em>Tasks:</em> Shop implementation and progression systems.</li>
+          <li><strong>Captain Kosmo</strong> — Endless runner (Android & iOS) • Unity. <em>Tasks:</em> Boss AI, collectibles, obstacles and UI integration.</li>
+          <li><strong>Spell Easy</strong> — Word puzzle for kids (Android & iOS) • Unity. <em>Tasks:</em> UI and sound integration.</li>
+        </ul>
+
+        <h4>Responsibilities</h4>
+        <ul>
+          <li>Feature design and implementation for gameplay and multiplayer modes.</li>
+          <li>UI & shop integration for mobile titles, mentoring and working with art/design teams.</li>
+          <li>Mobile performance optimization and QA iteration support.</li>
+        </ul>
+      </article>
+
+      <article id="dhruva" class="company">
+        <h3>Dhruva Interactive — Game Programmer</h3>
+        <p class="time">Apr 2013 – Aug 2014</p>
+
+        <h4>Overview</h4>
+        <p>Game Programmer on mobile titles and prototypes, focusing on gameplay features, UI and reusable systems.</p>
+
+        <h4>Projects & Contributions</h4>
+        <ul>
+          <li><strong>Captain Sharky</strong> — Mini-games bundle (Android & iOS) • Unity.
+            <br><em>Tasks:</em> Platform mini-games, shared profile system, UI and collectibles.</li>
+          <li>Unreleased puzzle title — mobile — contributed to collectibles & UI.</li>
+          <li>Unreleased resource-management prototype — PC — prototype implementation and systems.</li>
+        </ul>
+
+        <h4>Responsibilities</h4>
+        <ul>
+          <li>Implemented game mechanics, shared profile systems and UI flows.</li>
+          <li>Worked on mobile optimization, build pipelines and QA support.</li>
+        </ul>
+      </article>
+
+      <article id="gameshastra" class="company">
+        <h3>Gameshastra Solutions — Group Lead</h3>
+        <p class="time">Apr 2007 – Sept 2012</p>
+
+        <h4>Overview</h4>
+        <p>Group Lead for console and PC projects. Focused on gameplay systems, collectibles, and platform-specific optimizations for PS2, PSP, PS3 Move and PC.</p>
+
+        <h4>Projects & Highlights</h4>
+        <ul>
+          <li><strong>Kite Fight</strong> — Kite flying/fighting (PS3 Move). <em>Tasks:</em> Balloons popping mechanics, UI and motion-input handling.</li>
+          <li><strong>Cart Kings</strong> — Bullock cart racing (PS2 & PSP). <em>Tasks:</em> Powerups and platform optimization.</li>
+          <li><strong>Desi Adda</strong> — Mini-game bundle (PS2). <em>Tasks:</em> Rhythm/dance mini-game and integration into main package.</li>
+          <li><strong>EtchASketch</strong> — Action/Adventure (PC). <em>Tasks:</em> Collectibles and level scripting.</li>
+        </ul>
+
+        <h4>Responsibilities</h4>
+        <ul>
+          <li>Led teams and coordinated cross-discipline efforts for console titles.</li>
+          <li>Designed platform-appropriate gameplay systems and optimization work.</li>
+        </ul>
+      </article>
+
     </section>
 
-    <!-- Showreel -->
-    <section id="showreel" class="section container">
-      <h3>Showreel</h3>
-      <div class="video-row">
-        <div class="video-wrapper">
-          <!-- Replace YOUR_SHOWREEL_ID with your YouTube/Vimeo embed ID -->
-          <iframe src="https://www.youtube.com/embed/YOUR_SHOWREEL_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <p style="margin-top:12px;color:var(--muted)">Tip: upload trailers to YouTube (unlisted/public) and paste the <code>/embed/</code> URL above for best performance.</p>
+    <!-- SELECTED PROJECTS (summary) -->
+    <section id="projects" class="card">
+      <h2>Selected Projects (summary)</h2>
+      <ol>
+        <li><strong>Radiant Dark</strong> — Vertical slice, Action RPG, PC, Unreal Engine 5.3. Lead Programmer; R&amp;D on FCS & GAS.</li>
+        <li><strong>The Last Bastion</strong> — Strategy / Roguelite, PC, Unity. Lead Programmer; Behavior Tree AI; award-winning title.</li>
+        <li><strong>City Block Builder</strong> — Tycoon / City Simulation, Unity. Lead Game Developer; AI & simulation systems.</li>
+        <li><strong>Jolly Rogers — Pirates Rumble</strong> — 4-player couch co-op (PC). Lead Game Developer; multiplayer modes & systems.</li>
+        <li><strong>Captain Sharky</strong> — Mobile mini-games bundle (Unity). Platform mini-games & shared profile system.</li>
+        <li>Multiple other console and mobile titles across Gameshastra, Aavega, Dhruva — roles included UI, collectibles, level design and performance work.</li>
+      </ol>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" class="section container">
-      <h3>Experience</h3>
-      <div class="experience-list">
-        <div class="exp-item">
-          <h4>Lead Programmer — VoidPeak Games (Dec 2020 – Present)</h4>
-          <p>Worked on <em>Radiant Dark</em> (UE 5.3) and <em>The Last Bastion</em> (Unity). Leading teams (2–4 developers), technical design, VFX implementation, AI and R&D (FCS plugin, Gameplay Ability System).</p>
-        </div>
+    <!-- TECH & TOOLS -->
+    <section id="tech" class="card">
+      <h2>Programming Languages, Engines & Tools</h2>
+      <p><strong>Languages:</strong> C, C++, C#</p>
+      <p><strong>Engines & Frameworks:</strong> Unreal Engine 5.3, Unity, Phyre, Vicious Cycle Engine, BlitzMax, Torque Game Engine</p>
 
-        <div class="exp-item">
-          <h4>Lead Game Developer — Tentworks Interactive (Jan 2019 – Nov 2020)</h4>
-          <p>Led the development of <em>City Block Builder</em> (tycoon city building game), managed a team of 4, designed AI systems and core technical architecture.</p>
-        </div>
+      <h3>Dev Tools</h3>
+      <p>Visual Studio 2022, Rider, Xcode, ProDgDebugger</p>
 
-        <div class="exp-item">
-          <h4>Senior / Lead Roles — Aavega Interactive, Learning Yogi, Dhruva Interactive (2013–2018)</h4>
-          <p>Worked on titles including <em>Jolly Rogers — Pirates Rumble</em>, mini-games bundles, and multiple mobile titles. Tasks included technical design, AI, UI, and performance improvements.</p>
-        </div>
+      <h3>Version Control</h3>
+      <p>Git, Tortoise SVN, Smart SVN, Perforce, SourceTree, Git Desktop</p>
 
-        <div class="exp-item">
-          <h4>Earlier roles — Gameshastra, Carbonon Tech, etc. (2006–2012)</h4>
-          <p>Worked across platforms (PS2/PS3/PSP/PC) on a variety of titles and engines (Phyre, Vicious Cycle Engine, BlitzMax, Torque).</p>
-        </div>
-      </div>
+      <h3>Project Management</h3>
+      <p>Jira, Trello, BaseCamp, Excel</p>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section container">
-      <h3>Contact</h3>
+    <!-- EDUCATION -->
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Master of Computer Applications</strong> — SSM College of Engineering (Affiliated to Anna University); 2006 — Score: 78%.</li>
+        <li><strong>Bachelor of Computer Science</strong> — Sri Vasavi College (Affiliated to Bharathiar University); 2003.</li>
+        <li><strong>Higher Secondary (12th)</strong> — Government Higher Secondary School, Tamilnadu State Board; 2000 — Score: 76%.</li>
+        <li><strong>Secondary (10th)</strong> — Government Higher Secondary School, Tamilnadu State Board; 1998 — Score: 68%.</li>
+      </ul>
+    </section>
+
+    <!-- SKILLS & SOFT SKILLS -->
+    <section id="skills" class="card">
+      <h2>Skills & Strengths</h2>
+      <ul>
+        <li>Team Leadership & Development</li>
+        <li>Project Management (Scrum & Agile)</li>
+        <li>Strategic Planning & Execution</li>
+        <li>Version Control Administration</li>
+        <li>Problem Solving & Communication</li>
+        <li>Collaborative Mindset, Meticulous, Open-minded</li>
+      </ul>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies" class="card">
+      <h2>Hobbies</h2>
+      <p>Playing video games, bike riding, hiking.</p>
+    </section>
+
+    <!-- SOURCE & DOWNLOAD -->
+    <section id="source" class="card small">
+      <p>Site content populated from uploaded resume. Source: :contentReference[oaicite:1]{index=1}</p>
+      <p><a href="assets/PrakashAngappan-Resume.pdf" download>Download Resume (PDF)</a></p>
+    </section>
+
+    <!-- CONTACT (repeat for emphasis) -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
       <p>Email: <a href="mailto:aprakash.mca@gmail.com">aprakash.mca@gmail.com</a></p>
       <p>Phone: <a href="tel:+919900370190">+91-9900370190</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/prakashangappan/" target="_blank">linkedin.com/in/prakashangappan</a></p>
-      <p>Resume source: information used from uploaded resume. :contentReference[oaicite:1]{index=1}</p>
     </section>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Prakash Angappan — Head of Engineering</small>
+  <footer class="footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> Prakash Angappan</small>
     </div>
   </footer>
-
-  <!-- Project Modal -->
-  <div id="project-modal" class="modal" aria-hidden="true">
-    <div class="modal-inner">
-      <button id="modal-close" class="modal-close">×</button>
-      <h3 id="modal-title"></h3>
-      <div id="modal-video" class="modal-video"></div>
-      <div id="modal-desc"></div>
-    </div>
-  </div>
 
   <script src="scripts.js"></script>
 </body>
